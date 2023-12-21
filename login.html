@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="loginstyle.css">
+    <title>Login Page</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <div class="input-container">
+            <label for="username"><b>Username:</b></label>
+            
+            <input type="text" id="username" name="username" placeholder="Enter Username" oninput="validateInput(this.value, 'usernameValidation',8)" required>
+            <div id="usernameValidation" class="validation-box"></div>
+        </div>
+        <div class="input-container">
+            <label for="password"><b>Password:</b></label>
+            <input type="password" id="password" name="password" placeholder="Enter Password" oninput="validateInput(this.value, 'passwordValidation' ,8)"  required>
+            <div id="passwordValidation" class="validation-box"></div>
+</div>
+
+            <button type="button" onclick="validateLogin()">Login</button>
+        </form>
+        <p>Don't have an account?<button type="button" onclick="signUp()">Signup here</button></p>
+    
+    </div>
+
+    <script src="validation.js"></script>
+</body>
+</html>

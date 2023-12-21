@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(121,32,153,1) 86%);
+    background-attachment: fixed;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#taskInputContainer {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+#taskInput {
+    flex: 1;
+    padding: 8px;
+}
+
+button {
+    padding: 8px;
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+}
+button:hover{
+background-color:green;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border: 1px solid #ddd;
+    margin-bottom: 8px;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+    margin-left: 8px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.edit-icon {
+    cursor: pointer;
+    margin-left: 8px;
+    color:white;
+    background-color: blue;
+    width: 20px;
+}
+.delete-icon{
+    cursor: pointer;
+    margin-left: 8px;
+    color:white;
+    background-color:red;
+    width: 20px;
+}
